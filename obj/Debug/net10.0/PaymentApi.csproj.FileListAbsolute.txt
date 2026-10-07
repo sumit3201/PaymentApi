@@ -31,3 +31,4 @@ C:\c# Project\PaymentApi\obj\Debug\net10.0\refint\PaymentApi.dll
 C:\c# Project\PaymentApi\obj\Debug\net10.0\PaymentApi.pdb
 C:\c# Project\PaymentApi\obj\Debug\net10.0\PaymentApi.genruntimeconfig.cache
 C:\c# Project\PaymentApi\obj\Debug\net10.0\ref\PaymentApi.dll
+C:\c# Project\PaymentApi\obj\Debug\net10.0\PaymentApi.sourcelink.json

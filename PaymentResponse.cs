@@ -1,6 +1,6 @@
 namespace Models.PaymentResponse;
 
-class PaymentResponse
+public class PaymentResponse
 {
     public string PaymentId {get; set;} = string.Empty;
 

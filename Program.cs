@@ -19,12 +19,14 @@ builder.Services.AddHttpLogging( options =>
     }
 });
 
-
+//configure or register controller support
 builder.Services.AddControllers();
 // builder.Logging.AddFilter("Microsoft.AspNetCore.HttpLogging", LogLevel.Information);
 var app = builder.Build();
 
 app.UseHttpLogging();
+
+//Map controller endpoint so request can reach to them 
 app.MapControllers();
 
 
@@ -32,30 +34,6 @@ app.MapGet("/",() =>
     {
         return "Payment Api is running";
     }
-);
-app.MapPost("/payment", (PaymentRequest request) =>
-{
-    // return $"Amount : {payment.Amount} and currency :{payment.Currency}";
-
-    PaymentResponse response = new PaymentResponse()
-    {
-        PaymentId = "Pay-123",
-        Amount = request.Amount,
-        Currency = request.Currency,
-        Status = " Success"
-
-    };
-
-        // PaymentResponse response = new PaymentResponse();
-    
-        // response.PaymentId = "Pay-123";
-        // response.Amount = request.Amount;
-        // response.Currency = request.Currency;
-        // response.Status = " Success";
-
-    return response;
-}
-
 );
 
 
