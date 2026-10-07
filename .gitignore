@@ -1,0 +1,44 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+
+## Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / JetBrains
+.idea/
+*.iml
+
+## ASP.NET / .NET
+*.db
+*.pdb
+*.cache
+*.log
+project.lock.json
+project.fragment.lock.json
+*.deps.json
+*.runtimeconfig.json
+*.staticwebassets.*
+*.AssemblyInfo.cs
+
+## Test results
+TestResults/
+*.trx
+
+## OS files
+Thumbs.db
+.DS_Store
+
+## Temporary files
+*.tmp
+*.temp
